@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台南兩天一夜</title>
+  <style>
+    :root { color-scheme: light; --ink: #4d3b32; --muted: #806e62; --paper: #fffaf1; --accent: #c96d4d; --line: #ead7c5; --soft: #f8eee4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5ede3; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.65; }
+    main { width: min(100%, 680px); margin: 0 auto; padding: 22px 16px 36px; }
+    header { background: var(--paper); border-radius: 22px; padding: 28px 22px 26px; border: 1px solid #eddcca; box-shadow: 0 8px 24px rgba(110, 69, 39, .09); }
+    .animals { margin: 0 0 4px; font-size: 2.8rem; letter-spacing: .12em; line-height: 1.1; }
+    .eyebrow { margin: 0 0 8px; color: var(--accent); font-family: "DFKai-SB", "BiauKai", cursive; font-size: 1.15rem; font-weight: 700; }
+    h1 { margin: 0; font-family: "DFKai-SB", "BiauKai", cursive; font-size: clamp(2.35rem, 11vw, 3.7rem); letter-spacing: .04em; line-height: 1.2; }
+    .intro { margin: 10px 0 0; color: var(--muted); font-family: "DFKai-SB", "BiauKai", cursive; font-size: 1.12rem; }
+    .day { margin-top: 20px; }
+    .day-title { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font-family: "DFKai-SB", "BiauKai", cursive; font-size: 1.55rem; }
+    .day-title span { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: white; font-size: .95rem; }
+    .timeline { position: relative; padding: 2px 0 2px 22px; }
+    .timeline::before { content: ""; position: absolute; left: 5px; top: 14px; bottom: 14px; width: 3px; border-radius: 3px; background: var(--line); }
+    .stop { position: relative; margin: 10px 0; padding: 16px 16px 16px 19px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; }
+    .timeline .stop::before { content: ""; position: absolute; left: -24px; top: 20px; width: 11px; height: 11px; border: 3px solid var(--paper); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+    .meta { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-bottom: 3px; color: var(--accent); font-size: .95rem; font-weight: 700; }
+    .place { margin: 0; font-size: 1.18rem; font-weight: 800; }
+    .desc { margin: 3px 0 0; color: var(--muted); font-size: .98rem; }
+    footer { margin-top: 24px; color: var(--muted); font-size: .88rem; text-align: center; }
+    @media (min-width: 520px) { main { padding-top: 36px; } .stop { padding-right: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="animals" aria-label="小兔子、小熊和小貓">🐰 🐻 🐱</p>
+      <p class="eyebrow">今天去哪？</p>
+      <h1>動物方城市</h1>
+      <p class="intro">小兔隊長和阿熊的旅行筆記<br>慢慢走，好好玩，一起把台南收進回憶裡。</p>
+    </header>
+
+    <section class="day" aria-labelledby="day-one">
+      <h2 class="day-title" id="day-one"><span>1</span>第一天｜古城散步</h2>
+      <div class="timeline">
+        <article class="stop"><div class="meta"><span>10:30</span><span>示意店家：府城早午餐</span></div><h3 class="place">赤崁樓周邊</h3><p class="desc">先用一份在地風味早午餐開場，再到老城巷弄散步。</p></article>
+        <article class="stop"><div class="meta"><span>13:00</span><span>示意店家：古早味甜湯</span></div><h3 class="place">國華街美食巡禮</h3><p class="desc">邊走邊吃幾樣台南小吃，記得留點肚子給下一站。</p></article>
+        <article class="stop"><div class="meta"><span>15:30</span><span>示意景點：老屋咖啡</span></div><h3 class="place">神農街 × 老屋咖啡</h3><p class="desc">在保留老屋風貌的街區拍照、喝杯咖啡休息一下。</p></article>
+        <article class="stop"><div class="meta"><span>18:30</span><span>示意店家：海安路小館</span></div><h3 class="place">海安路晚餐</h3><p class="desc">晚上一起吃熱鬧的台南料理，飯後沿著街景慢慢逛回住宿處。</p></article>
+      </div>
+    </section>
+
+    <section class="day" aria-labelledby="day-two">
+      <h2 class="day-title" id="day-two"><span>2</span>第二天｜海風與日常</h2>
+      <div class="timeline">
+        <article class="stop"><div class="meta"><span>09:00</span><span>示意店家：牛肉湯小店</span></div><h3 class="place">在地早餐</h3><p class="desc">早起吃碗熱湯，感受台南人一天的開始。</p></article>
+        <article class="stop"><div class="meta"><span>11:00</span><span>示意景點：安平古堡</span></div><h3 class="place">安平老街</h3><p class="desc">走訪古蹟與老街，順手買些小點心當伴手禮。</p></article>
+        <article class="stop"><div class="meta"><span>14:30</span><span>示意景點：漁光島</span></div><h3 class="place">漁光島看海</h3><p class="desc">吹吹海風、走走林間小路，把旅程放慢到最舒服的速度。</p></article>
+        <article class="stop"><div class="meta"><span>17:00</span><span>示意店家：巷口冰店</span></div><h3 class="place">台南甜點收尾</h3><p class="desc">用一碗冰或一杯飲料結束兩天行程，再帶著滿足回家。</p></article>
+      </div>
+    </section>
+
+    <footer>※ 店名與時間皆為示意，出發前再一起確認最新資訊。</footer>
+
+    <section class="day" aria-labelledby="before-leaving">
+      <h2 class="day-title" id="before-leaving"><span>✓</span>行前提醒</h2>
+      <article class="stop"><div class="meta"><span>天氣</span></div><p class="desc">示意：晴時多雲，白天約 28°C，午後可能有短暫雨。</p></article>
+      <article class="stop"><div class="meta"><span>要帶的東西</span></div><p class="desc">示意：輕便雨具、防曬用品、水壺、行動電源與舒服的鞋子。</p></article>
+      <article class="stop"><div class="meta"><span>集合時間</span></div><p class="desc">示意：第一天上午 10:00，台南車站前站出口集合。</p></article>
+    </section>
+  </main>
+</body>
+</html>
